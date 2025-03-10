@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #333;
+}
+
+.display {
+    background-color: #000;
+    padding: 20px;
+    text-align: right;
+    border-radius: 10px 10px 0 0;
+}
+
+.display input {
+    width: 100%;
+    font-size: 3rem;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-align: right;
+    padding: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1px;
+}
+
+.buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+.buttons .operator,
+.buttons .equal {
+    background-color: #f57c00;
+    color: #000;
+}
+
+.buttons .operator:hover,
+.buttons .equal:hover {
+    background-color: #ffa726;
+}
+
+.buttons .clear {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+.buttons .clear:hover {
+    background-color: #c7c7c7;
+}
+
+.buttons .delete {
+    background-color: #a5a5a5;
+    color: #000;
+}
+
+.buttons .delete:hover {
+    background-color: #c7c7c7;
+}
+
